@@ -99,15 +99,31 @@ function outputMemberData(data)
         member_text_parent.appendChild(member_text);
     
         var text = [
-            document.createTextNode('<名前>'), document.createElement('br'),
+            document.createTextNode('<Name>'), document.createElement('br'),
             document.createTextNode(data[i][1]), document.createElement('br'),
-            document.createTextNode('<コメント>'), document.createElement('br'),
-            document.createTextNode(data[i][2]), document.createElement('br'),
-            document.createTextNode('<インフォ>'), document.createElement('br'),
+        ];
+
+        var text_1 = [
+            document.createTextNode('<Tips>'), document.createElement('br')
+        ];
+
+        var tips = data[i][2].split('\n');
+        for(let n = 0; n < tips.length; n++)
+        {
+            text_1.push(document.createTextNode(tips[n]));
+            text_1.push(document.createElement('br'));
+        }
+
+        text = text.concat(text_1);
+
+        var text_2 = [
+            document.createTextNode('<Info>'), document.createElement('br'),
             document.createTextNode(data[i][3]), document.createElement('br')
         ];
 
-        console.log(data[i][2].includes('\n'));
+        text = text.concat(text_2);
+
+        console.log(text);
 
         for(let n = 0; n < text.length; n++)
         {
