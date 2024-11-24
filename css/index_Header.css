@@ -1,0 +1,15 @@
+.index_Header{
+    
+    position: relative; 
+    height: 12.5%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.index_Header span{
+    
+    color: white;
+    font-size: 40px;
+}

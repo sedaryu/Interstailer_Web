@@ -1,0 +1,25 @@
+.index_InfoBox{
+    
+    position: absolute;
+    top: 20%;
+    width: 48.75%;
+    height: 60%;
+    border: solid white; 
+    border-width: 1px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.index_InfoBox span{
+    
+    font-size: 15px;
+    color: white;
+}
+
+.index_InfoBox:hover{
+    
+	/*リンクをホバーしたと際指カーソルにする*/
+	cursor: pointer;
+}

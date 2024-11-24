@@ -1,0 +1,26 @@
+.member_member{
+
+    position: relative; 
+    display: flex; 
+    background-color: aqua;
+    margin-bottom: 2%;
+}
+
+.member_icon{
+
+    position: relative; 
+    background-color: white;
+}
+
+.member_text_parent{
+
+    position: relative; 
+    background-color: cadetblue;
+}
+
+.member_text{
+
+    position: relative;
+    width: 95%; 
+    background-color: cadetblue;
+}

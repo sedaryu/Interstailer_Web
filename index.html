@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <title>インタース亭ラー</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/body.css">
+    <link rel="stylesheet" href="css/parent.css">
+    <link rel="stylesheet" href="css/index_Header.css">
+    <link rel="stylesheet" href="css/index_Canvas.css">
+    <link rel="stylesheet" href="css/index_Info.css">
+    <link rel="stylesheet" href="css/index_InfoBox.css">
+    <link rel="stylesheet" href="css/index_Menu.css">
+    <link rel="stylesheet" href="css/index_Button.css">
+    <link rel="stylesheet" href="css/index_Icon.css">
+    <link rel="stylesheet" href="css/index_Label.css">
+    <script src="JavaScript/desvg.js"></script>
+    <script src="JavaScript/index.js"></script>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="index_Header">
+            <span>インタース亭ラー</span>
+        </div>
+        <div class="index_Canvas">
+        </div>
+        <div class="index_Info">
+            <div class="index_InfoBox" style="left: 0%;"><span>新着お知らせ</span></div>
+            <div class="index_InfoBox" style="left: 51.25%;"><span>日替わりコーナー</span></div>
+        </div>
+        <div class="index_Menu">
+            <div class="index_Button" style="left: 4%; top: 0%;">
+                <div 
+                    class="index_Icon" id="summary" 
+                    onmouseover="animateIndexIconOnCursor(this)" onmouseleave="stopAnimationIndexIconOnCursor(this)" 
+                    style="left: 5%; top: 5%; width: 90%; height: 90%;"
+                >
+                    <img src="svg/Rocket.svg" class="icon" alt=""></img>
+                </div>
+            </div>
+            <div class="index_Label" style="left: 4%; bottom: 50%;"><span>概要</span></div>
+            <div class="index_Button" style="left: 28%; top: 0%;">
+                <div 
+                    class="index_Icon" id="member" 
+                    onmouseover="animateIndexIconOnCursor(this)" onmouseleave="stopAnimationIndexIconOnCursor(this)" 
+                    style="left: 3.75%; top: 3.75%; width: 92.5%; height: 92.5%;"
+                >
+                    <img src="svg/Member.svg" class="icon" alt=""></img>
+                </div>
+            </div>
+            <div class="index_Label" style="left: 28%; bottom: 50%;"><span>メンバー</span></div>
+            <div class="index_Button" style="left: 52%; top: 0%;">
+                <div 
+                    class="index_Icon" id="backnumber" 
+                    onmouseover="animateIndexIconOnCursor(this)" onmouseleave="stopAnimationIndexIconOnCursor(this)" 
+                    style="left: 5%; top: 7.5%; width: 90%; height: 100%;"
+                >
+                    <img src="svg/Backnumber.svg" class="icon" alt=""></img>
+                </div>
+            </div>
+            <div class="index_Label" style="left: 52%; bottom: 50%;"><span>既刊</span></div>
+            <div class="index_Button" style="left: 76%; top: 0%;">
+                <div 
+                    class="index_Icon" id="event" 
+                    onmouseover="animateIndexIconOnCursor(this)" onmouseleave="stopAnimationIndexIconOnCursor(this)" 
+                    style="left: 2.5%; top: 2.5%; width: 95%; height: 95%;"
+                >
+                    <img src="svg/Event.svg" class="icon" alt=""></img>
+                </div>
+            </div>
+            <div class="index_Label" style="left: 76%; bottom: 50%;"><span>イベント</span></div>
+            <div class="index_Button" style="left: 4%; top: 50%;">
+                <div 
+                    class="index_Icon" id="information" 
+                    onmouseover="animateIndexIconOnCursor(this)" onmouseleave="stopAnimationIndexIconOnCursor(this)" 
+                    style="left: 2.5%; top: 2.5%; width: 95%; height: 95%;"
+                >
+                    <img src="svg/Information.svg" class="icon" alt=""></img>
+                </div>
+            </div>
+            <div class="index_Label" style="left: 4%; bottom: 0%;"><span>お知らせ</span></div>
+            <div class="index_Button" style="left: 28%; top: 50%;">
+                <div 
+                    class="index_Icon" id="link" 
+                    onmouseover="animateIndexIconOnCursor(this)" onmouseleave="stopAnimationIndexIconOnCursor(this)" 
+                    style="left: 2.5%; top: 2.5%; width: 95%; height: 95%;"
+                >
+                    <img src="svg/Link.svg" class="icon" alt=""></img>
+                </div>
+            </div>
+            <div class="index_Label" style="left: 28%; bottom: 0%;"><span>リンク</span></div>
+            <div class="index_Button" style="left: 52%; top: 50%;">
+                <div 
+                    class="index_Icon" id="contact" 
+                    onmouseover="animateIndexIconOnCursor(this)" onmouseleave="stopAnimationIndexIconOnCursor(this)" 
+                    style="left: 2.5%; top: 2.5%; width: 95%; height: 95%;"
+                >
+                    <img src="svg/Contact.svg" class="icon" alt=""></img>
+                </div>
+            </div>
+            <div class="index_Label" style="left: 52%; bottom: 0%;"><span>連絡</span></div>
+            <div class="index_Button" style="left: 76%; top: 50%;">
+                <div 
+                    class="index_Icon" id="pleasure" 
+                    onmouseover="animateIndexIconOnCursor(this)" onmouseleave="stopAnimationIndexIconOnCursor(this)" 
+                    style="left: 2.5%; top: 2.5%; width: 95%; height: 95%;"
+                >
+                    <img src="svg/Pleasure.svg" class="icon" alt=""></img>
+                </div>
+            </div>
+            <div class="index_Label" style="left: 76%; bottom: 0%;"><span>お楽しみ</span></div>
+        </div>
+    </div>
+
+</body>
+
+</html>

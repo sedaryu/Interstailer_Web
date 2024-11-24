@@ -1,0 +1,14 @@
+.index_Button{
+    
+    position: absolute;
+    width: 20%;
+    padding-top: 20%;
+    border: solid white; 
+    border-width: 1px;
+}
+
+.index_Button:hover{
+    
+	/*リンクをホバーした際指カーソルにする*/
+	cursor: pointer;
+}

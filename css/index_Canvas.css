@@ -1,0 +1,17 @@
+.index_Canvas{
+
+    position: relative;
+    left: 2.5%;
+    height: 42.5%;
+    width: 95%;
+    border: solid white;
+    border-width: 1px;
+    overflow: hidden;
+}
+
+.index_Canvas .point{
+
+    position: absolute; 
+    left: 50%; top: 50%;
+    background-color: white
+}
