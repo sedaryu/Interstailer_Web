@@ -56,7 +56,7 @@ function setMemberSizeByPageSize() {
 
 function setMemberData()
 {
-    const url = 'https://script.google.com/macros/s/AKfycbwmz8icfNpnAsf_Vvp-Xk9dfiNmD_Ct8AV0Wk-Df58AH4bgfiS8wVOBsnQCVnjCz2M/exec';
+    const url = 'https://script.google.com/macros/s/AKfycbx1XF5VF7i6ypZrhtyXrLMs7OqCInX4UW2zqDFBLNAAumeLGSGtgz0f98PGnifjZ94/exec';
 
     fetch(url)
     .then((res) => res.json())
@@ -83,6 +83,12 @@ function outputMemberData(data)
         var member_icon = document.createElement("div");
         member_icon.setAttribute("class","member_icon");
         member_member.appendChild(member_icon);
+
+        var member_img = document.createElement("img");
+        member_img.setAttribute("class","member_img");
+        member_img.setAttribute("src", data[i][4]);
+        console.log(data[i][4]);
+        member_icon.appendChild(member_img);
     
         var member_text_parent = document.createElement("div");
         member_text_parent.setAttribute("class","member_text_parent");
@@ -100,6 +106,8 @@ function outputMemberData(data)
             document.createTextNode('<インフォ>'), document.createElement('br'),
             document.createTextNode(data[i][3]), document.createElement('br')
         ];
+
+        console.log(data[i][2].includes('\n'));
 
         for(let n = 0; n < text.length; n++)
         {
