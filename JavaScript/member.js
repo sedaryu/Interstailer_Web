@@ -116,9 +116,13 @@ function outputMemberData(data)
 
         text = text.concat(text_1);
 
+        var link = document.createElement('a');
+        link.setAttribute("href", data[i][3]);
+        link.textContent = data[i][3];
+
         var text_2 = [
             document.createTextNode('<Info>'), document.createElement('br'),
-            document.createTextNode(data[i][3]), document.createElement('br')
+            link
         ];
 
         text = text.concat(text_2);
